@@ -8,7 +8,7 @@ const initialState = {
 
 let usersId, filteredUserList = [];
 
-const userReducer = function (state = initialState, action) {
+const userReducer = (state = initialState, action) => {
 
     switch (action.type) {
         case 'USER_LIST_SUCCESS':

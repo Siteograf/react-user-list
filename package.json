@@ -1,8 +1,12 @@
 {
   "name": "react-user-list",
   "version": "0.1.0",
+  "homepage": "https://Siteograf.github.io/react-user-list",
   "dependencies": {
     "axios": "^0.16.2",
+    "babel-jest": "^20.0.3",
+    "gh-pages": "^1.0.0",
+    "jest": "^20.0.4",
     "react": "^15.6.1",
     "react-dom": "^15.6.1",
     "react-redux": "^5.0.5",
@@ -16,6 +20,8 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   }
 }
